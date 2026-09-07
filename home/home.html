@@ -1,1 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Our Little World ❤️</title>
+
+    <link
+        rel="stylesheet"
+        href="home.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <div class="space"></div>
+
+    <div class="stars"></div>
+
+
+    <main class="hero">
+
+
+        <!-- =========================
+             HEART
+        ========================== -->
+
+        <div class="heart-scene">
+
+            <div class="heart-glow"></div>
+
+            <div class="heart">
+                ♥
+            </div>
+
+            <div class="orbit orbit-one"></div>
+
+            <div class="orbit orbit-two"></div>
+
+        </div>
+
+
+        <!-- =========================
+             INTRO
+        ========================== -->
+
+        <p class="eyebrow">
+            WELCOME TO OUR LITTLE WORLD
+        </p>
+
+
+        <h1>
+
+            YOU ARE MY
+
+            <span>
+                FAVORITE PERSON
+            </span>
+
+        </h1>
+
+
+        <p class="description">
+
+            Somehow, among billions of people,
+            my heart found you.
+
+        </p>
+
+
+        <!-- =========================
+             ACTIONS
+        ========================== -->
+
+        <div class="actions">
+
+            <button id="letterButton">
+                💌 &nbsp; Open My Letter
+            </button>
+
+            <button id="secretButton">
+                ♡ &nbsp; Secret
+            </button>
+
+        </div>
+
+
+        <!-- =========================
+             MUSIC PLAYER
+        ========================== -->
+
+        <section class="music-player">
+
+
+            <div class="music-top">
+
+
+                <div
+                    class="music-disc"
+                    id="musicDisc"
+                >
+
+                    <span>
+                        ♪
+                    </span>
+
+                </div>
+
+
+                <div class="music-details">
+
+                    <div
+                        id="songTitle"
+                        class="song-title"
+                    >
+                        Our Song
+                    </div>
+
+
+                    <div
+                        id="songNumber"
+                        class="song-number"
+                    >
+                        01
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- CONTROLS -->
+
+            <div class="music-controls">
+
+
+                <button
+                    id="shuffleButton"
+                    class="small-control"
+                    title="Shuffle"
+                >
+                    🔀
+                </button>
+
+
+                <button
+                    id="prevSong"
+                    class="control-button"
+                    title="Previous"
+                >
+                    ⏮
+                </button>
+
+
+                <button
+                    id="playSong"
+                    class="play-button"
+                    title="Play"
+                >
+                    ▶
+                </button>
+
+
+                <button
+                    id="nextSong"
+                    class="control-button"
+                    title="Next"
+                >
+                    ⏭
+                </button>
+
+
+                <button
+                    id="repeatButton"
+                    class="small-control"
+                    title="Repeat"
+                >
+                    🔁
+                </button>
+
+
+            </div>
+
+
+            <!-- PROGRESS -->
+
+            <div class="progress-container">
+
+
+                <span id="currentTime">
+                    0:00
+                </span>
+
+
+                <input
+                    type="range"
+                    id="progressBar"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="0.1"
+                >
+
+
+                <span id="duration">
+                    0:00
+                </span>
+
+
+            </div>
+
+
+            <!-- VOLUME -->
+
+            <div class="volume-container">
+
+
+                <button
+                    id="muteButton"
+                    title="Mute"
+                >
+                    🔊
+                </button>
+
+
+                <input
+                    type="range"
+                    id="volumeBar"
+                    min="0"
+                    max="1"
+                    value="0.8"
+                    step="0.01"
+                >
+
+
+            </div>
+
+
+            <!-- SONG LIST -->
+
+            <div
+                id="songList"
+                class="song-list"
+            ></div>
+
+
+        </section>
+
+
+        <!-- =========================
+             OUR STORY
+        ========================== -->
+
+        <section class="story-section">
+
+
+            <p class="story-eyebrow">
+                OUR STORY
+            </p>
+                    
+<!-- =========================
+     MEMORIES
+========================= -->
+
+<section class="memories-section" id="memories">
+
+    <div class="memories-heading">
+        <span>OUR MEMORIES</span>
+        <h2>Little Moments, Forever Us</h2>
+        <p>
+            شاید هنوز خاطرات زیادی نداشته باشیم،
+            اما داستان ما تازه شروع شده.
+        </p>
+    </div>
+
+    <div class="memory-line">
+
+        <!-- MEMORY 1 -->
+        <article class="memory-card reveal">
+            <div class="memory-date">
+                🗓️ 24 August 2026
+            </div>
+
+            <div class="memory-dot">❤️</div>
+
+            <div class="memory-content">
+                <h3>The Beginning</h3>
+
+                <p>
+                    شاید یک روز معمولی بود،
+                    اما از وقتی تو وارد زندگی من شدی،
+                    دیگه هیچ روزی معمولی نیست.
+                </p>
+
+                <button
+                    class="memory-open"
+                    data-title="The Beginning"
+                    data-text="24 August 2026؛ روزی که داستان ما شروع شد. شاید آن لحظه نمی‌دانستیم قرار است چقدر برای هم مهم شویم."
+                >
+                    Read Memory
+                </button>
+            </div>
+        </article>
+
+
+        <!-- MEMORY 2 -->
+        <article class="memory-card reveal">
+            <div class="memory-date">
+                🗓️ 26 August 2026
+            </div>
+
+            <div class="memory-dot">♡</div>
+
+            <div class="memory-content">
+                <h3>Your Smile</h3>
+
+                <p>
+                    بعضی لبخندها فقط چند ثانیه طول می‌کشند،
+                    ولی می‌توانند تمام روز آدم را عوض کنند.
+                </p>
+
+                <button
+                    class="memory-open"
+                    data-title="Your Smile"
+                    data-text="بین تمام چیزهایی که می‌توانست در آن لحظه اتفاق بیفتد، دیدن لبخند تو برای من قشنگ‌ترینش بود."
+                >
+                    Read Memory
+                </button>
+            </div>
+        </article>
+
+
+        <!-- MEMORY 3 -->
+        <article class="memory-card reveal">
+            <div class="memory-date">
+                🗓️ 28 August 2026
+            </div>
+
+            <div class="memory-dot">❤️</div>
+
+            <div class="memory-content">
+                <h3>Just Us</h3>
+
+                <p>
+                    هنوز اول راهیم؛
+                    هنوز کلی صفحه سفید داریم
+                    که باید با هم پرشان کنیم.
+                </p>
+
+                <button
+                    class="memory-open"
+                    data-title="Just Us"
+                    data-text="قشنگ‌ترین قسمت داستان این است که هنوز بیشترش نوشته نشده؛ و قرار است خیلی از بهترین قسمت‌هایش را با هم بسازیم."
+                >
+                    Read Memory
+                </button>
+            </div>
+        </article>
+
+
+        <!-- SECRET 1 -->
+        <article class="memory-card secret-memory reveal">
+
+            <div class="secret-lock">
+                🔐
+            </div>
+
+            <div class="memory-content">
+
+                <h3>Secret Memory</h3>
+
+                <p>
+                    این یکی فقط برای کسیه
+                    که قلب این داستانه...
+                </p>
+
+                <button
+                    class="memory-open secret-open"
+                    data-title="A Secret For You"
+                    data-text="اگر قرار باشد فقط یک نفر را از بین تمام آدم‌های دنیا انتخاب کنم، باز هم انتخابم تویی. این راز کوچیک من برای توئه. ❤️"
+                >
+                    🔐 Unlock
+                </button>
+
+            </div>
+        </article>
+
+
+        <!-- SECRET 2 -->
+        <article class="memory-card secret-memory reveal">
+
+            <div class="secret-lock">
+                🔐
+            </div>
+
+            <div class="memory-content">
+
+                <h3>Future Memory</h3>
+
+                <p>
+                    این خاطره هنوز اتفاق نیفتاده...
+                </p>
+
+                <button
+                    class="memory-open secret-open"
+                    data-title="Not Yet..."
+                    data-text="این هنوز یک خاطره نیست. یک وعده است؛ برای تمام لحظه‌هایی که هنوز قرار است با هم زندگی کنیم. ❤️"
+                >
+                    🔐 Unlock
+                </button>
+
+            </div>
+        </article>
+
+    </div>
+
+    <div class="memory-ending">
+        <span class="timeline-heart">❤️</span>
+
+        <p>
+            <strong>24 August 2026</strong>
+            <br>
+            This is only the beginning.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- MEMORY MODAL -->
+
+<div
+    class="memory-modal"
+    id="memoryModal"
+>
+
+    <div class="memory-modal-box">
+
+        <button
+            id="closeMemory"
+            class="close-memory"
+        >
+            ×
+        </button>
+
+        <div class="modal-heart">
+            ❤️
+        </div>
+
+        <span id="memoryModalDate">
+            OUR MEMORY
+        </span>
+
+        <h2 id="memoryModalTitle">
+            Memory
+        </h2>
+
+        <p id="memoryModalText">
+        </p>
+
+    </div>
+
+</div>  
+
+            <h2 class="story-title">
+
+                OUR LITTLE
+
+                <span>
+                    JOURNEY
+                </span>
+
+            </h2>
+
+
+            <p class="story-description">
+
+                Everything has a beginning.
+                Ours started on August 24, 2026.
+
+            </p>
+
+
+            <div class="story-heart">
+                ♥
+            </div>
+
+
+            <!-- COUNTER -->
+
+            <div class="counter">
+
+
+                <div class="counter-box">
+
+                    <span id="days">
+                        00
+                    </span>
+
+                    <small>
+                        DAYS
+                    </small>
+
+                </div>
+
+
+                <div class="counter-box">
+
+                    <span id="hours">
+                        00
+                    </span>
+
+                    <small>
+                        HOURS
+                    </small>
+
+                </div>
+
+
+                <div class="counter-box">
+
+                    <span id="minutes">
+                        00
+                    </span>
+
+                    <small>
+                        MINUTES
+                    </small>
+
+                </div>
+
+
+                <div class="counter-box">
+
+                    <span id="seconds">
+                        00
+                    </span>
+
+                    <small>
+                        SECONDS
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="story-date">
+
+                <span>
+                    ♥
+                </span>
+
+                AUGUST 24, 2026
+
+                <span>
+                    ♥
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =========================
+             SCROLL
+        ========================== -->
+
+        <div class="scroll">
+
+            SCROLL TO DISCOVER
+
+            <span>
+                ↓
+            </span>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- =========================
+         LETTER MODAL
+    ========================== -->
+
+    <div
+        id="letterModal"
+        class="modal"
+    >
+
+
+        <div class="letter">
+
+
+            <button
+                id="closeLetter"
+                class="close"
+            >
+                ×
+            </button>
+
+
+            <div class="letter-icon">
+                ♥
+            </div>
+
+
+            <p class="letter-label">
+                A LITTLE LETTER
+            </p>
+
+
+            <h2>
+                My Love
+            </h2>
+
+
+            <div class="line"></div>
+
+
+            <p class="letter-content">
+
+                I don't need a perfect life.
+
+                <br><br>
+
+                I just want the little moments,
+                the random laughs,
+                the late-night conversations,
+                and every beautiful memory
+                that I get to share with you.
+
+                <br><br>
+
+                If I could choose again,
+                I'd still choose you.
+
+            </p>
+
+
+            <p class="signature">
+                Forever yours ♥
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- AUDIO -->
+
+    <audio
+        id="audioPlayer"
+        preload="metadata"
+    ></audio>
+
+
+    <script
+        src="home.js"
+    ></script>
+
+
+</body>
+
+</html>
